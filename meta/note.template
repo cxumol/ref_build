@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="author" content="district10" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>$if(title-prefix)$$title-prefix$ – $endif$$pagetitle$</title>
+    <link rel="stylesheet" href="$rootdir$github-markdown.css" type="text/css" />
+    <link rel="stylesheet" href="$rootdir$highlight.css" type="text/css" />
+    <link rel="stylesheet" href="$rootdir$notes.css" type="text/css" />
+    <link rel="stylesheet" href="$rootdir$insight.css" type="text/css" />
+$if(math)$
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML-full" type="text/javascript"></script>
+$endif$
+</head>
+<body class="markdown-body">
+<div id="navigator"><a id="gotoindex" href="$if(ISINDEX)$../$endif$index.html" title="【回到笔记索引 | Back to Index】">☣</a>
+</div>
+<span id="help">搜索框按下 "h" 获取页面帮助</span>
+
+<div id="search-form-wrap">
+    <form class="search-form">
+        <input class="ins-search-input search-form-input" placeholder="Search" type="text"> 
+    </form>
+    <div class="ins-search">
+        <div class="ins-search-mask"></div>
+        <div class="ins-search-container">
+            <div class="ins-input-wrapper">
+                <input class="ins-search-input" placeholder="Type something..." type="text">
+            </div>
+            <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: 'posts',
+            PAGES: 'pages',
+            UNTITLED: '(Untitled)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: 'content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+
+$body$
+<script src="$rootdir$lazyload.min.js"></script>
+<script src="$rootdir$jquery-3.0.0.min.js"></script>
+<script src="$rootdir$jquery.idTabs.min.js"></script>
+<script src="$rootdir$egg.min.js"></script>
+<script src="$rootdir$clipboard.min.js"></script>
+<script src="$rootdir$notes.js"></script>
+<script src="$rootdir$insight.js"></script>
+</body>
+</html>

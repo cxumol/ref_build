@@ -1,0 +1,4 @@
+*.diff
+*.bin
+public/*
+src/*
